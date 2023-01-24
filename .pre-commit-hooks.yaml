@@ -1,0 +1,8 @@
+---
+- id: nosami
+  name: no SAMI
+  description: Ensure sami artifact is not being checked into source code
+  entry: hooks/nosami.sh
+  language: script
+  types:
+    - shell
