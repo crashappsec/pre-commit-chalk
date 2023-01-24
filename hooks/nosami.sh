@@ -5,9 +5,11 @@ set -eEu
 MAGIC=dadfedabbadabbed
 
 for f in $@; do
-    echo Checking $f
-    if grep "\"$MAGIC\"" $f >&/dev/null; then
-        echo "$f contains SAMI artifact"
+    echo -n "Checking $f: "
+    if grep "\"$MAGIC\"" $f > /dev/null 2>&1; then
+        echo "contains SAMI artifact"
         exit 1
+    else
+        echo "no SAMI found"
     fi
 done
