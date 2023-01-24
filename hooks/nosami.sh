@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 set -eEu
-set -o pipefail
 
 MAGIC=dadfedabbadabbed
 
