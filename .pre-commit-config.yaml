@@ -18,10 +18,10 @@ repos:
 
   - repo: local
     hooks:
-      - id: nosami
-        name: no SAMI
-        description: Ensure sami artifact is not being checked into source code
-        entry: hooks/nosami.sh
+      - id: nochalk
+        name: no chalk marks
+        description: Ensure chalk marks are not being checked into source code
+        entry: hooks/nochalk.sh
         language: script
         types:
           - shell

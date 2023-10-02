@@ -1,12 +1,13 @@
-# SAMI pre-commit hooks
+# Chalk pre-commit hooks
 
-This repo contains hooks which allow to run SAMI pre-commit hooks.
+This repo contains hooks which allow to run
+[chalk](https://github.com/crashappsec/chalk) pre-commit hooks.
 
 Add it to your `.pre-commit-config.yaml`:
 
 ```yaml
-- repo: https://github.com/crashappsec/pre-commit-sami
+- repo: https://github.com/crashappsec/pre-commit-chalk
   rev: v0.0.1
   hooks:
-    - id: nosami
+    - id: nochalk
 ```
